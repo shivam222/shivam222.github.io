@@ -3,11 +3,16 @@
 		<head>
 
 			<title>NewWorld</title>
+			<!--javascript-->
+			 <script  src="jquery-3.0.0.js"></script>
+		     <script src="angular.js"></script>
+		     <script src="angular-route.js"></script>
+		     <script src="main.js"></script>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 			<link rel="stylesheet" type="text/css" href="css/main.css">
 		</head>
-		<body class="mainb">
+		<body class="mainb" ng-app="git">
        <nav  class="navbar navbar-default navbar-fixed-top ">
 			
 			  <div class="row" >
@@ -20,13 +25,15 @@
 					
 					   <div class="container-fluid menu3" >
 					<ul class="nav navbar-nav" >
-						<li><a href="" class="activate">Contact</a></li>
-						<li><a href="">Resume</a></li>
+						<li><a href="#contact" class="activate">Contact</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#inspirations">Inspirations</a></li>
 					</ul>
 					<div id="small" style="margin-top:0px">
 					<select class="form-control" onchange="location = this.value;"> 
-                      <option value="" selected="selected">Contact</option> 
-                      <option value="">Resume</option> 
+                      <option value="#contact" selected="selected">Contact</option> 
+                      <option value="#resume">Resume</option> 
+                      <option value="#inspirations">Inspirations</option> 
                       </select>
 					  </div>
 					</div>
@@ -34,5 +41,12 @@
 					</div>
 
 	</nav>
+	<div ng-view> </div>
+	<br><br><br><br><br>
+	 <div id="footer">
+			&copy; Untitled | Design by <a href="">shivam bansal</a>
+		</div>
+	 <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 		</body>
 	</html>
