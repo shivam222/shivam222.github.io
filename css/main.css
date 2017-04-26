@@ -32,3 +32,17 @@
   transform: scale(1.5, 1.5); /** default is 1, scale it to 1.5 */
     opacity: 1;
 }
+.msg { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+#unique { 
+
+   position: absolute; 
+   top: 20px; 
+   margin-left: -380px;
+   margin-top: 30px;
+   text-align: center; 
+   width:20%; 
+}
