@@ -31,7 +31,10 @@
  .photo img:hover{
   transform: scale(1.5, 1.5); /** default is 1, scale it to 1.5 */
     opacity: 1;
+<<<<<<< HEAD
     text-align:center;
+=======
+>>>>>>> 2228ed9142074e987f657780e857712e12a63f4e
 }
 .msg { 
    position: relative; 
