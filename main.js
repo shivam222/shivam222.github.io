@@ -6,9 +6,7 @@ app.config(function($routeProvider){
 	.when('/contact',{templateUrl:'contact.html',
 	controller  : 'contact'})
 	.when('/resume',{templateUrl:'resume.html',
-	controller  : 'resume'})
-	.when('/inspirations',{templateUrl:'inspirations.html',
-	controller  : 'inspirations'});
+	controller  : 'resume'});
 });
 
 app.controller('contact',function($scope){

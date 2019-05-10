@@ -11,29 +11,27 @@
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		</head>
 		<body class="mainb" ng-app="git">
        <nav  class="navbar navbar-default navbar-fixed-top ">
 			
 			  <div class="row" >
-				<div  class="navbar-header col-md-6 col-sm-6" >  
-				<a class="navbar-brand" href="#home" style="margin-top:-40px" ><img src="images/logo.jpg" width="100" height="100"/></a>
+				<div  class="navbar-header col-md-6 col-sm-6 logo" >  
+				<ul class="nav navbar-nav" >
+						<li><a href="#contact"><b></b></a></li>
+				</ul>			
 				</div>
-				   <div class="col-md-6 col-sm-6 ">
-
-
-					
+				   <div class="col-md-6 col-sm-6 ">					
 					   <div class="container-fluid menu3" >
 					<ul class="nav navbar-nav" >
 						<li><a href="#contact" class="activate">Contact</a></li>
 						<li><a href="#resume">Resume</a></li>
-						<li><a href="#inspirations">Inspirations</a></li>
 					</ul>
 					<div id="small" style="margin-top:0px">
 					<select class="form-control" onchange="location = this.value;"> 
                       <option value="#contact" selected="selected">Contact</option> 
                       <option value="#resume">Resume</option> 
-                      <option value="#inspirations">Inspirations</option> 
                       </select>
 					  </div>
 					</div>
